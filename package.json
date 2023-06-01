@@ -1,0 +1,14 @@
+{
+  "name": "starhub",
+  "version": "1.0.0",
+  "description": "project on grid system of css. fully responsive site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hridoy Ahmed",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
