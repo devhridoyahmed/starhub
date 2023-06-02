@@ -98,18 +98,8 @@ body {
 .mb-hg {
   margin-bottom: 8rem !important; }
 
-.feature {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 2.5rem; }
-  .feature__icon {
-    width: 4.5rem;
-    height: 4.5rem;
-    grid-row: 1 / span 2;
-    transform: translateY(-1rem); }
-  .feature__text {
-    font-size: 1.7rem; }
+.home {
+  background-color: #f9f7f6; }
 
 .btn {
   background-color: #c69963;
@@ -125,6 +115,19 @@ body {
   .btn:hover {
     background-color: #b28451; }
 
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem; }
+  .feature__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem); }
+  .feature__text {
+    font-size: 1.7rem; }
+
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
@@ -132,7 +135,28 @@ body {
 
 .story__pictures {
   background-color: #c69963;
-  grid-column: full-start / col-end 4; }
+  grid-column: full-start / col-end 4;
+  background-image: linear-gradient(rgba(198, 153, 99, 0.6), rgba(198, 153, 99, 0.6)), url(../image/story-bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center; }
+
+.story__img--1 {
+  width: 110%;
+  grid-row: 2 / 6;
+  grid-column: 2 / 6;
+  justify-self: center;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+
+.story__img--2 {
+  width: 115%;
+  grid-row: 4 / 6;
+  grid-column: 4 / 7;
+  z-index: 20;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
 
 .story__content {
   background-color: #f9f7f6;
@@ -155,8 +179,11 @@ body {
   grid-column: col-start 7 / full-end; }
 
 .homes {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
 
 .features {
   grid-column: center-start / center-end;
