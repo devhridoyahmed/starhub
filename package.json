@@ -1,14 +1,20 @@
 {
   "name": "starhub",
   "version": "1.0.0",
-  "description": "project on grid system of css. fully responsive site.",
+  "description": "grid applied project",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+    "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
   },
   "author": "Hridoy Ahmed",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "autoprefixer": "^10.4.14",
+    "concat": "^1.0.3",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0"
   }
 }
